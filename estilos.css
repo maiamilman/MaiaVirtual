@@ -1,0 +1,242 @@
+
+@import: "css/nav";
+
+
+$colortexto: #7400b8;
+
+
+*{
+	margin: 0%;
+	padding: 0%;
+	box-sizing: border-box;
+	text-decoration: none;
+
+}
+
+
+
+
+#main-nav a{
+	background-color: #80ffdb;
+	text-decoration: none;
+	color:#5e60ce;
+	display: block;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: background 0.4s ;
+	height: 64px;
+	position: 0;
+}
+
+#main-nav a:hover{
+	background-color: #72efdd;
+
+}
+
+#main-nav ul{
+	list-style: none;
+	display: flex;
+	padding: 0;
+}
+
+#main-nav li{
+	width: 100%;
+	line-height: 3rem;
+	text-align: center;
+	position: relative;
+}
+
+#main-nav li:hover .submenu > li{
+	display: block;
+	top: 0px;
+
+
+}
+
+.submenu li{
+	display: none;
+	position: absolute;
+	top: 0px;
+	color:#5e60ce;
+	justify-content: center;
+	align-items: center;
+}
+
+.submenu{
+	display: flex;
+	flex-direction: column;
+	position:absolute;
+	width: 100%;
+}
+
+
+
+
+
+body{ 
+	font-family: 'Piazzolla', serif;
+	text-decoration: none;
+	text-align: center;
+	/*background-color: #72efdd;*/
+	background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);*/
+	background-size: 200%;
+}
+
+body header h1{
+	padding: 0px;
+	margin: 0px;
+	text-align: center;
+}
+
+h2{
+	color: #7400b8;
+}
+
+.titulo{
+	color: #7400b8;
+	background-color: #80ffdb;
+	text-align: center;
+}
+
+ol li{
+	color: #FA07EE;
+}
+
+
+tr{
+	color:#FA07EE;
+}
+
+#grilla {
+	grid: auto; 
+   display: grid;
+   grid-template-areas:
+     "header header"
+     "img1 img2"
+     "img3 img4"
+     "footer footer";
+   grid-template-rows: 2fr 2fr 2fr 2fr;
+   grid-template-columns: (4, 1fr);
+   grid-column-gap: 10px;
+   grid-row-gap: 10px;
+   height: 100vh;
+   margin: 0;	
+   justify-items: stretch;
+}
+.border {
+   border: 1px solid black;
+   display: block;
+   
+}
+header {
+   grid-area: header;
+}
+footer {
+   grid-area: footer;
+}
+section#artistas {
+   grid-area: artistas;     
+}
+section#arte {
+   grid-area: arte;     
+}
+nav {
+   grid-area: nav;
+}
+aside {
+   grid-area: publicidad;
+}
+
+
+
+.titulo-lista{ 
+	color: #F895F3;
+}
+
+.titulo-set{
+	color:#736272;
+}
+
+.instrucciones{
+	color: #73076E;
+}
+
+.parrafo{
+	color: #736272;
+	text-align: left;
+}
+
+
+input{
+	color: #736272;
+}
+
+.button{
+	color: white;
+}
+
+form{
+	text-align: left;
+}
+
+body footer a{ 
+	display: inline-block;
+	text-decoration: none;
+
+}
+
+.card{
+		background-color: #80ffdb;
+		border-radius: 15px;
+		padding: 20px;
+		display: flex;
+		align-items: center;
+		position: relative;
+		margin-bottom: 50px;
+}
+
+.card__titulo{
+	font-family: Piazzolla;
+	font-size: 25px;
+	font-weight: normal;
+	color: #7400b8;
+	text-align: left;
+	
+}
+
+.card__texto{
+	text-align: left;
+	font-family: Piazzolla;
+	font-size: 18px;
+	color: #736272;
+	margin-right: 10rem;
+
+}
+
+.card__boton{
+	text-decoration: none;
+	background-color:#72efdd;
+	color:#7400b8;
+	font-family: Piazzolla;
+	font-size:18px;
+	font-weight: bold;
+	border:none;
+	min-width: 180px;
+	height: 50px;
+	padding: 0 30px;
+	display: inline-block;
+	border-radius: 100px;
+	text-decoration:none;
+	display: inline-flex;
+	align-items: center;
+	transition: 3s ease all;
+}
+
+p{
+	font-size: 25px;
+	color: #736272;
+	font-family: Piazzolla;
+	text-align: center;
+
+}
